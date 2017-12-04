@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<!-- Mirrored from association-2.kiubi-web.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2017 12:02:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+<title>ASSECI  - Infos - Evenements</title>
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+<meta name="description" content="Association  est un site de natural net" />
+<meta name="description" content="ASSECI est un site pour les étudiants camerounais inscrit à l'IAI Gabon" />
+<meta name="keywords" content="ASSECI" />
+
+<link rel="canonical" href="index.html" />
+<meta property="og:title" content="ASSECI - H14"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="index.html"/>
+<meta property="og:image" content=""/>
+<meta property="og:site_name" content="ASSECI "/>
+<meta property="og:description" content="ASSECI" />
+<meta property="og:street-address" content="36 cours de reims"/>
+<meta property="og:locality" content="libreville"/>
+<meta property="og:postal-code" content="IAI"/>
+<meta property="og:country-name" content="GABON LIBREVILLE"/>
+<meta property="og:email" content="contact@asseci-h14.fr"/>
+<meta property="og:phone_number" content="+24106682353"/>
+
+<link href="{% static 'plateforme/theme/fr/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/plugins/mediaelement/mediaelementplayer.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/css/style.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/plugins/prettyphoto/css/prettyPhoto.css' %}" rel="stylesheet" type="text/css">
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen" /><![endif]-->
+<!-- Color Style -->
+<link href="{% static 'plateforme/theme/fr/colors/color1.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/css/custom.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/css/print.css' %}" rel="stylesheet" type="text/css"  media="print" />
+<!-- SCRIPTS
+  ================================================== -->
+<script src="{% static 'plateforme/theme/fr/js/modernizr.js' %}"></script><!-- Modernizr -->
+<!-- Charge les feuilles de styles des Widgets et des modules -->
+
+<!-- Charges les scripts des Options avancées du Back-office -->
+
+</head>
+<body>
+<!--[if lt IE 7]>
+  <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+  <!-- Start Site Header -->
+  <!-- Start Site Header -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-9 col-xs-9">
+          <h1 class="logo" style="font-size: 30px;">
+                        <img src="{% static 'plateforme/media/72/logo_asseci.png' %}" alt="ASSECI" class="img-circle" />
+            ASSECI 
+                    </h1>
+              
+            <small class="corporate">Association des Etudiants Camerounais de l'IAI</small>
+          </div>
+          
+<div class="col-md-4 col-sm-3 col-xs-3">
+<ul class="top-navigation hidden-sm hidden-xs">
+  
+  {% if user.is_authenticated %}
+            <li><!--a href="{% url 'plateforme:signup' %}"-->{{ user.username }}</a></li>
+            <li><a href="{% url 'plateforme:logout' %}">Déconnexion</a></li>
+          {% else %}
+            <form class="form-inline ml-auto">
+              <li><a href="{% url 'plateforme:signup' %}">S'inscrire</a></li>
+              <li><a href="{% url 'plateforme:login' %}">Se connecter</a></li>
+            </form>
+          {% endif %}
+  
+    
+  </ul>
+  <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> 
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+<div class="main-menu-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+<nav class="navigation" style="width: 100%;">
+  <ul class="sf-menu">
+    <li> <a href="{% url 'plateforme:accueil' %}">Accueil</a>
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'plateforme:presentation' %}" role="button" aria-haspopup="true" aria-expanded="false">
+        Présentation
+      </a>
+      <ul class="dropdown-menu">
+        <li> <a href="{% url 'plateforme:missions' %}">Notre Mission</a>
+        <li> <a href="{% url 'plateforme:bureau' %}">Le Bureau</a>
+      </ul>
+    </li>
+    <li> <a href="{% url 'plateforme:profil' %}">Membres</a>
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'plateforme:actualites' %}" role="button" aria-haspopup="true" aria-expanded="false">
+        Actualites
+      </a>
+      <ul class="dropdown-menu">
+        <li> <a href="{% url 'plateforme:evenements' %}">Evènements</a>
+        <li> <a href="{% url 'plateforme:annonces' %}">Annonces</a>
+        <li> <a href="{% url 'plateforme:timeline' %}">Timeline</a>
+      </ul>
+    </li>
+    <li role="presentation" class="dropdown"> 
+      <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'plateforme:education' %}" role="button" aria-haspopup="true" aria-expanded="false">
+        Education
+      </a>
+      <!--ul class="dropdown-menu">
+        <li> <a href="single-post.html">Reseau</a>
+        <li> <a href="single-post-2.html">Developpement</a>
+        <li> <a href="single-post.html">Certifications</a>
+        <li> <a href="single-post-2.html">Base de Données</a>
+        <li> <a href="single-post.html">Systèmes</a>
+        <li> <a href="single-post.html">Bureautique</a>
+        <li> <a href="single-post.html">Gestion de Projet</a>
+        <li> <a href="single-post.html">Insertion Professionnelle</a>
+      </ul-->
+    </li>
+    <li role="presentation" class="dropdown"> 
+      <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'plateforme:forum' %}" role="button" aria-haspopup="true" aria-expanded="false">
+        Espace Pro
+      </a>
+      <ul class="dropdown-menu">
+        <li> <a href="{% url 'plateforme:forum' %}">Forum</a>
+        <li> <a href="{% url 'plateforme:blog' %}">Mon Blog</a>
+        </li>
+      </ul>
+    </li>
+    <li> <a href="{% url 'plateforme:contact' %}">Contact</a>
+
+  </ul>
+</nav>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- End Site Header --> 
+  
+ <div class="nav-backed-header parallax" style="background-image:url(../theme/fr/images/slide1.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ol class="breadcrumb">
+
+<li> <a href="index.html" target="_self" rel="v:url" property="v:title">ASSECI</a></li>
+
+<li> <a href="index.html" target="_self" rel="v:url" property="v:title">Contact</a></li>
+
+      </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+
+<!-- Start Page Header -->
+<div class="page-header">
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-sm-10 col-xs-8">
+      <h1>Formulaire de contact</h1>
+    </div>
+  </div>
+</div>
+</div>
+<!-- End Page Header --> 
+
+
+
+  <!-- Start Content -->
+  <div class="main" role="main">
+    <div id="content" class="content full">
+      <div class="container">
+        <div class="row"><div class="col-md-9 contenu">
+          
+
+
+ 
+    <header class="single-post-header clearfix">
+      <h2 class="post-title">Nous trouver</h2>
+    </header>
+    <div class="post-content">
+      <div id="gmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.3678288807946!2d-0.5989429999999999!3d44.834441999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527f5a94f3f9b%3A0xa21167b453dd016e!2sNatural-net!5e0!3m2!1sfr!2sfr!4v1432895102000"></iframe>
+      </div>
+
+
+
+<article class="multi_form" id="multi_form_7">
+  
+  <header class="post_header">
+    <h1>Nous écrire</h1>
+  </header>
+  
+  
+  <form method="post" novalidate>
+              {% csrf_token %}
+              {% include 'plateforme/includes/form.html' %}
+  <input type="submit" name="Submit" value="Envoyer" class="bt_envoyer btn btn-primary btn-lg pull-right" /></p><br style="clear:both">
+    <p class="alerte"> <strong>* champs obligatoires </strong></p>
+    <p> <span style="font-size: 0.8em;">En application de la loi n&deg; 78-17 du 06 janvier 1978 relative &agrave; l'informatique, aux fichiers et aux libert&eacute;s, vous disposez des droits d'opposition (art. 26i), d'acc&egrave;s (art. 34 &agrave; 38) et de rectification (art. 36) des donn&eacute;es le concernant. Pour cela, contactez-nous par mail &agrave; l&rsquo;adresse <a href="mailto:contact@natural-net.fr">contact@h14-net.fr</a> </span> </p>
+
+  </form>
+  
+  
+  <div class="post_footer"></div>
+</article>
+ </div>
+</div>
+          <!-- Start Sidebar -->
+          <div class="col-md-3 sidebar">
+            <div class="widget sidebar-widget search-form-widget">
+  <div class="input-group input-group-lg">
+<form action="http://association-2.kiubi-web.com/recherche/cms/" method="get" style="display: inherit;">
+      <input name="r" type="text" class="form-control"  id="r" placeholder="Rechercher..." />
+      <span class="input-group-btn"><input type="submit" value="Ok" class="submit btn btn-default" title="Lancer la recherche" style="height:34px;" /></span> 
+</form>
+</div>
+</div>
+
+            
+<div class="widget-recent-posts widget">
+  
+  <!-- Latest Sermons -->
+    <div class="listing sermons-listing">
+    <header class="listing-header"> 
+      
+      <h3>CONTACTS - ASSECI</h3>
+       
+    </header>
+    <section class="listing-cont">
+    <ul>
+
+      <li class="item sermon">
+        <div class="post-title">
+          <h4><a href="single-post.html">Président CHAKOUR</a></h4>
+          <span class="meta-data"><i class="fa fa-phone"></i> +241 06 68 23 53<br />
+          <span class="meta-data"><i class="fa fa-facebook"></i> ASSECI<br />
+          <span class="meta-data"><i class="fa fa-twitter"></i> @ASSECI/H14<br />
+          <span class="meta-data"><i class="fa fa-google"></i> ASSECI<br />
+          <span class="meta-data"><i class="fa fa-home"></i> Libreville, Campus IAI<br />
+        </div>
+      </li>
+
+      <li class="item sermon">
+        <div class="post-title">
+          <h4><a href="single-post.html">SG FOTSO Didier</a></h4>
+          <span class="meta-data"><i class="fa fa-phone"></i> +241 06 68 23 53<br />
+          <span class="meta-data"><i class="fa fa-facebook"></i> ASSECI<br />
+          <span class="meta-data"><i class="fa fa-twitter"></i> @ASSECI/H14<br />
+          <span class="meta-data"><i class="fa fa-google"></i> ASSECI<br />
+          <span class="meta-data"><i class="fa fa-home"></i> Libreville, Campus IAI<br />
+        </div>
+      </span>
+      </li>
+
+      <li class="item sermon">
+        <div class="post-title">
+          <h4><a href="single-post.html">MINREX Bony</a></h4>
+          <span class="meta-data"><i class="fa fa-phone"></i> +241 06 68 23 53<br />
+          <span class="meta-data"><i class="fa fa-facebook"></i> ASSECI<br />
+          <span class="meta-data"><i class="fa fa-twitter"></i> @ASSECI/H14<br />
+          <span class="meta-data"><i class="fa fa-google"></i> ASSECI<br />
+          <span class="meta-data"><i class="fa fa-home"></i> Libreville, Campus IAI<br />
+        </div>
+      </li>
+      
+    </ul>
+
+    </section>
+    </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Start Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+      
+
+
+<!-- Start Footer Widgets -->
+<div class="col-md-4 col-sm-4 widget footer-widget">
+  <h4 class="footer-widget-title">A propos</h4>
+  <img src="{% static 'plateforme/media/72/logo_asseci2.png' %}" alt="Logo">
+  <div class="spacer-20"></div>
+  <p>L'ASSECI est une association essentiellement constitué non seulement d'étudiants nouvellement inscrits à l'IAI GABON , mais aussi d'anciens étudiants éparpillés dans le monde.</p>
+</div>
+
+
+
+
+<div class="col-md-4 col-sm-4 widget footer-widget">
+  <h4 class="footer-widget-title">Informations</h4>
+  <ul>
+  <li><a href="{% url 'plateforme:mentionslegales' %}">Informations légales</a></li>
+  <li><a href="{% url 'plateforme:paiement' %}">Sécurité des paiements</a></li>
+  <li><a href="{% url 'plateforme:plan' %}">Plan du site</a></li>
+  </ul>
+</div>
+
+
+
+<div class="col-md-4 col-sm-4 widget footer-widget">
+  <div class="post_newsletter" id="post_newsletter">
+    
+    <h4 class="footer-widget-title">Newsletter</h4>
+    
+      
+      
+      <form action="#post_newsletter" method="post">
+       <input type="text" name="email" value="" class="input-lg" id="emailnewsletter" placeholder="Votre email" style="width: 100%;"/><p class="radiolabel">
+            <input type="radio" class="radio" name="opt" value="in" id="opt_in" style="display: inline;margin-top: -3px;" checked="checked"/> <label for="opt_in" style="display: inline;padding-left: 6px;padding-right: 10px;">S'inscrire</label>   
+        <input type="radio" class="radio" name="opt" value="out" id="opt_out" style="display: inline;margin-top: -3px;" /> <label for="opt_out" style="display: inline;padding-left: 6px;padding-right: 10px;">Se désinscrire</label>
+       
+        </p>
+        <input type="submit" value="Ok" class="bouton btn btn-primary btn-lg pull-right" />
+        <input type="hidden" name="act" value="send" />
+        <input type="hidden" name="ctl" value="communication/newsletter"/>
+      </form>
+      
+      
+  </div><br class="cl_both"/>
+</div>
+ 
+      </div>
+    </div>
+  </footer>
+  <footer class="site-footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="copyrights-col-left col-md-6 col-sm-6">
+          <p>&copy; 2017 ASSECI - H14. Tous droits r&eacute;serv&eacute;s au H14</p>
+        </div>
+        <div class="copyrights-col-right col-md-6 col-sm-6">
+          <div class="social-icons"> <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a> <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a> <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a> <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-rss"></i></a> </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer --> 
+  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> </div>
+<script src="{% static 'plateforme/theme/fr/js/jquery-2.0.0.min.js' %}"></script> <!-- Jquery Library Call --> 
+<script src="{% static 'plateforme/theme/fr/plugins/prettyphoto/js/prettyphoto.js' %}"></script> <!-- PrettyPhoto Plugin --> 
+<script src="{% static 'plateforme/theme/fr/js/helper-plugins.js' %}"></script> <!-- Plugins --> 
+<script src="{% static 'plateforme/theme/fr/js/bootstrap.js' %}"></script> <!-- UI --> 
+<script src="{% static 'plateforme/theme/fr/js/waypoints.js' %}"></script> <!-- Waypoints --> 
+<script src="{% static 'plateforme/theme/fr/plugins/mediaelement/mediaelement-and-player.min.js' %}"></script> <!-- MediaElements --> 
+<script src="{% static 'plateforme/theme/fr/js/init.js' %}"></script> <!-- All Scripts --> 
+<script src="{% static 'plateforme/theme/fr/plugins/flexslider/js/jquery.flexslider.js' %}"></script> <!-- FlexSlider --> 
+<script src="{% static 'plateforme/theme/fr/plugins/countdown/js/jquery.countdown.min.js' %}"></script> <!-- Jquery Timer -->
+
+<!-- Charges les scripts des Options avancées du Back-office -->
+<script type="text/javascript" src="{% static 'plateforme/theme/fr/js/scripts.js"></script>
+
+</body>
+
+<!-- Mirrored from association-2.kiubi-web.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2017 12:03:22 GMT -->
+</html>

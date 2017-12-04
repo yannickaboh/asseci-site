@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<!-- Mirrored from association-2.kiubi-web.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2017 12:02:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+<title>ASSECI  - Paiement en ligne</title>
+<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+<meta name="description" content="Association  est un site de natural net" />
+<meta name="description" content="ASSECI est un site pour les étudiants camerounais inscrit à l'IAI Gabon" />
+<meta name="keywords" content="ASSECI" />
+
+<link rel="canonical" href="index.html" />
+<meta property="og:title" content="ASSECI - H14"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="index.html"/>
+<meta property="og:image" content=""/>
+<meta property="og:site_name" content="ASSECI "/>
+<meta property="og:description" content="ASSECI" />
+<meta property="og:street-address" content="36 cours de reims"/>
+<meta property="og:locality" content="libreville"/>
+<meta property="og:postal-code" content="IAI"/>
+<meta property="og:country-name" content="GABON LIBREVILLE"/>
+<meta property="og:email" content="contact@asseci-h14.fr"/>
+<meta property="og:phone_number" content="+24106682353"/>
+
+<link href="{% static 'plateforme/theme/fr/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/plugins/mediaelement/mediaelementplayer.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/css/style.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/plugins/prettyphoto/css/prettyPhoto.css' %}" rel="stylesheet" type="text/css">
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" media="screen" /><![endif]-->
+<!-- Color Style -->
+<link href="{% static 'plateforme/theme/fr/colors/color1.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/css/custom.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'plateforme/theme/fr/css/print.css' %}" rel="stylesheet" type="text/css"  media="print" />
+<!-- SCRIPTS
+  ================================================== -->
+<script src="{% static 'plateforme/theme/fr/js/modernizr.js' %}"></script><!-- Modernizr -->
+<!-- Charge les feuilles de styles des Widgets et des modules -->
+
+<!-- Charges les scripts des Options avancées du Back-office -->
+
+</head>
+<body>
+<!--[if lt IE 7]>
+  <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+<div class="body"> 
+  <!-- Start Site Header -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-9 col-xs-9">
+          <h1 class="logo" style="font-size: 30px;">
+                        <img src="{% static 'plateforme/media/72/logo_asseci.png' %}" alt="ASSECI" class="img-circle" />
+            ASSECI 
+                    </h1>
+              
+            <small class="corporate">Association des Etudiants Camerounais de l'IAI</small>
+          </div>
+          
+<div class="col-md-4 col-sm-3 col-xs-3">
+<ul class="top-navigation hidden-sm hidden-xs">
+  
+  <li><a href="{% url 'plateforme:inscription' %}">S'inscrire</a></li>
+  <li><a href="{% url 'plateforme:connexion' %}">Se connecter</a></li>
+  
+    
+  </ul>
+  <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> 
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+<div class="main-menu-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+<nav class="navigation" style="width: 100%;">
+  <ul class="sf-menu">
+    <li> <a href="{% url 'plateforme:accueil' %}">Accueil</a>
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'plateforme:presentation' %}" role="button" aria-haspopup="true" aria-expanded="false">
+        Présentation
+      </a>
+      <ul class="dropdown-menu">
+        <li> <a href="{% url 'plateforme:missions' %}">Notre Mission</a>
+        <li> <a href="{% url 'plateforme:bureau' %}">Le Bureau</a>
+      </ul>
+    </li>
+    <li> <a href="{% url 'plateforme:profil' %}">Membres</a>
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'plateforme:actualites' %}" role="button" aria-haspopup="true" aria-expanded="false">
+        Actualites
+      </a>
+      <ul class="dropdown-menu">
+        <li> <a href="{% url 'plateforme:evenements' %}">Evènements</a>
+        <li> <a href="{% url 'plateforme:annonces' %}">Annonces</a>
+        <li> <a href="{% url 'plateforme:timeline' %}">Timeline</a>
+      </ul>
+    </li>
+    <li role="presentation" class="dropdown"> 
+      <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'plateforme:education' %}" role="button" aria-haspopup="true" aria-expanded="false">
+        Education
+      </a>
+      <!--ul class="dropdown-menu">
+        <li> <a href="single-post.html">Reseau</a>
+        <li> <a href="single-post-2.html">Developpement</a>
+        <li> <a href="single-post.html">Certifications</a>
+        <li> <a href="single-post-2.html">Base de Données</a>
+        <li> <a href="single-post.html">Systèmes</a>
+        <li> <a href="single-post.html">Bureautique</a>
+        <li> <a href="single-post.html">Gestion de Projet</a>
+        <li> <a href="single-post.html">Insertion Professionnelle</a>
+      </ul-->
+    </li>
+    <li role="presentation" class="dropdown"> 
+      <a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'plateforme:forum' %}" role="button" aria-haspopup="true" aria-expanded="false">
+        Espace Pro
+      </a>
+      <ul class="dropdown-menu">
+        <li> <a href="{% url 'plateforme:forum' %}">Forum</a>
+        <li> <a href="{% url 'plateforme:blog' %}">Mon Blog</a>
+        </li>
+      </ul>
+    </li>
+    <li> <a href="{% url 'plateforme:contact' %}">Contact</a>
+
+  </ul>
+</nav>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- End Site Header --> 
+
+
+  <ul class="slides">
+  <div class="nav-backed-header parallax" style="background-image:url({% static 'plateforme/media/342/slide1.jpg' %});">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ol class="breadcrumb">
+
+<li> <a href="securite-des-paiements.html" target="_self" rel="v:url" property="v:title">ASSECI</a></li>
+
+<li> <a href="securite-des-paiements.html" target="_self" rel="v:url" property="v:title">Sécurité des paiements</a></li>
+
+      </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+
+
+
+  <!-- Start Content -->
+  <div class="main" role="main">
+    <div id="content" class="content full">
+      <div class="container">
+        <div class="row"><div class="col-md-9 contenu">
+          
+
+
+<article class="post_simple">
+  <header class="post_header">
+  
+    <h2>Sécurité totale via notre système de paiement en ligne</h2>
+  
+    
+  </header>
+  <article class="post_content">
+    <span style="font-weight: bold;">H14 PayPal </span>vous garantit que toutes les transactions que vous effectuez sur notre site internet sont s&ucirc;res &agrave; 100%.<br />
+Notre syst&egrave;me de paiement en ligne est s&eacute;curis&eacute; par [op&eacute;rateur bancaire] qui contr&ocirc;le automatiquement la validit&eacute; des droits d&#39;acc&egrave;s lors du paiement par carte bancaire et crypte tous nos &eacute;changes afin d&#39;en garantir la confidentialit&eacute;.<br />
+<br />
+<span style="font-weight: bold;">H14 PayPal</span> accepte les cartes bancaires suivantes :<br />
+<ul>
+  <li>
+    Airtel Money</li>
+  <li>
+    Express Union</li>
+  <li>
+    Western Union</li>
+</ul>
+<br />
+Si vous ne souhaitez pas utiliser votre carte bancaire, veuillez nous contacter :<br />
+<br />
+<br />
+<br />
+T&eacute;l. : +24106682353<br />
+Email : <a href="mailto:yannickabohthierry@gmail.com">yannickabohthierry@gmail.com</a>
+  </article>
+</article>
+
+
+</div>
+          <!-- Start Sidebar -->
+          <div class="col-md-3 sidebar"></div>
+          
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+
+  <!-- Start Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+      
+
+
+<!-- Start Footer Widgets -->
+<div class="col-md-4 col-sm-4 widget footer-widget">
+  <h4 class="footer-widget-title">A propos</h4>
+  <img src="{% static 'plateforme/media/72/logo_asseci2.png' %}" alt="Logo">
+  <div class="spacer-20"></div>
+  <p>L'ASSECI est une association essentiellement constitué non seulement d'étudiants nouvellement inscrits à l'IAI GABON , mais aussi d'anciens étudiants éparpillés dans le monde.</p>
+</div>
+
+
+
+
+<div class="col-md-4 col-sm-4 widget footer-widget">
+  <h4 class="footer-widget-title">Informations</h4>
+  <ul>
+  <li><a href="{% url 'plateforme:mentionslegales' %}">Informations légales</a></li>
+  <li><a href="{% url 'plateforme:paiement' %}">Sécurité des paiements</a></li>
+  <li><a href="{% url 'plateforme:plan' %}">Plan du site</a></li>
+  </ul>
+</div>
+
+
+
+<div class="col-md-4 col-sm-4 widget footer-widget">
+  <div class="post_newsletter" id="post_newsletter">
+    
+    <h4 class="footer-widget-title">Newsletter</h4>
+    
+      
+      
+      <form action="#post_newsletter" method="post">
+       <input type="text" name="email" value="" class="input-lg" id="emailnewsletter" placeholder="Votre email" style="width: 100%;"/><p class="radiolabel">
+            <input type="radio" class="radio" name="opt" value="in" id="opt_in" style="display: inline;margin-top: -3px;" checked="checked"/> <label for="opt_in" style="display: inline;padding-left: 6px;padding-right: 10px;">S'inscrire</label>   
+        <input type="radio" class="radio" name="opt" value="out" id="opt_out" style="display: inline;margin-top: -3px;" /> <label for="opt_out" style="display: inline;padding-left: 6px;padding-right: 10px;">Se désinscrire</label>
+       
+        </p>
+        <input type="submit" value="Ok" class="bouton btn btn-primary btn-lg pull-right" />
+        <input type="hidden" name="act" value="send" />
+        <input type="hidden" name="ctl" value="communication/newsletter"/>
+      </form>
+      
+      
+  </div><br class="cl_both"/>
+</div>
+ 
+      </div>
+    </div>
+  </footer>
+  <footer class="site-footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="copyrights-col-left col-md-6 col-sm-6">
+          <p>&copy; 2017 ASSECI - H14. Tous droits r&eacute;serv&eacute;s au H14</p>
+        </div>
+        <div class="copyrights-col-right col-md-6 col-sm-6">
+          <div class="social-icons"> <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a> <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest"></i></a> <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a> <a href="http://www.pinterest.com/" target="_blank"><i class="fa fa-youtube"></i></a> <a href="#"><i class="fa fa-rss"></i></a> </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer --> 
+  <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> </div>
+<script src="{% static 'plateforme/theme/fr/js/jquery-2.0.0.min.js' %}"></script> <!-- Jquery Library Call --> 
+<script src="{% static 'plateforme/theme/fr/plugins/prettyphoto/js/prettyphoto.js' %}"></script> <!-- PrettyPhoto Plugin --> 
+<script src="{% static 'plateforme/theme/fr/js/helper-plugins.js' %}"></script> <!-- Plugins --> 
+<script src="{% static 'plateforme/theme/fr/js/bootstrap.js' %}"></script> <!-- UI --> 
+<script src="{% static 'plateforme/theme/fr/js/waypoints.js' %}"></script> <!-- Waypoints --> 
+<script src="{% static 'plateforme/theme/fr/plugins/mediaelement/mediaelement-and-player.min.js' %}"></script> <!-- MediaElements --> 
+<script src="{% static 'plateforme/theme/fr/js/init.js' %}"></script> <!-- All Scripts --> 
+<script src="{% static 'plateforme/theme/fr/plugins/flexslider/js/jquery.flexslider.js' %}"></script> <!-- FlexSlider --> 
+<script src="{% static 'plateforme/theme/fr/plugins/countdown/js/jquery.countdown.min.js' %}"></script> <!-- Jquery Timer -->
+
+<!-- Charges les scripts des Options avancées du Back-office -->
+<!--script type="text/javascript" src="{% static 'plateforme/theme/fr/js/scripts.js"></script-->
+
+</body>
+
+<!-- Mirrored from association-2.kiubi-web.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Nov 2017 12:03:22 GMT -->
+</html>

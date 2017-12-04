@@ -1,0 +1,119 @@
+/****HEADER*****/
+
+nav.navigation {
+  display: none;
+}
+ul.top-navigation.hidden-sm.hidden-xs {
+  display: none!important;
+}
+a.visible-sm.visible-xs.menu-toggle {
+  display: none!important;
+}
+
+/****ACCUEIL****/
+
+.hero-slider.flexslider.clearfix {
+  display: none;
+}
+.featured-blocks.clearfix {
+  display: none;
+}
+.to-event-url {
+  display: none!important;
+}
+.content {
+  padding: 25px 0;
+}
+a.media-box {
+  display: none;
+}
+.featured-sermon-video {
+  display: none;
+}
+.featured-gallery {
+  display: none;
+}
+div#post_newsletter {
+  display: none;
+}
+
+/****PAGE PROFONDE****/
+
+img.img-responsive {
+  display: none;
+}
+.col-md-3.sidebar {
+  display: none;
+}
+.spacer-20 {
+  display: none!important;
+}
+.spacer-30 {
+  display: none!important;
+}
+ol.breadcrumb {
+  display: none;
+}
+input.submit.btn.btn-primary {
+  display: none;
+}
+input.bouton.btn.btn-primary {
+  display: none;
+}
+input.submit.reset.btn.btn-primary-reset {
+  display: none;
+}
+input.bt_envoyer.btn.btn-primary.btn-lg.pull-right {
+  display: none;
+}
+div#gmap {
+  display: none;
+}
+a.mdp_search {
+  display: none;
+}
+.container {
+  padding-bottom: 0px!important;
+}
+a.media-box {
+  display: none;
+}
+li.grid-item.post.format-standard.isotope-item {
+  margin-bottom: 0px!important;
+}
+.featured-image {
+  display: none;
+}
+i.fa {
+  display: none;
+}
+.img-thumbnail {
+  display: none;
+}
+section.post-comment-form {
+  display: none;
+}
+nav.btn-toolbar.pull-right {
+  display: none;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: none;
+}
+
+/***FOOTER****/
+
+.site-footer {
+  padding: 0px 0;
+}
+.social-icons {
+  display: none;
+}
+.widget {
+  margin-bottom: 0px;
+}
+a#back-to-top {
+  display: none!important;
+}
+.site-footer-bottom {
+  padding: 0px;
+}

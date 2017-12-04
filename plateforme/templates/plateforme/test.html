@@ -1,0 +1,98 @@
+<!-- Start Site Header -->
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-9 col-xs-9">
+          <h1 class="logo" style="font-size: 30px;">
+                        <img src="{% static 'plateforme/media/72/logo_asseci.png' %}" alt="ASSECI" class="img-circle" />
+            ASSECI 
+                    </h1>
+              
+            <small class="corporate">Association des Etudiants Camerounais de l'IAI</small>
+          </div>
+          
+<div class="col-md-4 col-sm-3 col-xs-3">
+<ul class="top-navigation hidden-sm hidden-xs">
+  
+  <li><a href="compte/ouverture.html">S'inscrire</a></li>
+  <li><a href="compte/index.html">Se connecter</a></li>
+  
+    
+  </ul>
+  <a href="#" class="visible-sm visible-xs menu-toggle"><i class="fa fa-bars"></i></a> 
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+<div class="main-menu-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+<nav class="navigation">
+  
+  <ul class="sf-menu">
+    
+    
+    <li> <a href="{% url 'plateforme:accueil' %}">Accueil</a>
+      
+    <li> <a href="{% url 'plateforme:presentation' %}">Présentation</a>
+      
+    <ul class="sf-menu">
+      <li> <a href="{% url 'plateforme:missions' %}">Notre Mission</a>
+      <li> <a href="{% url 'plateforme:bureau' %}">Le Bureau actuel</a>
+      </li>
+    </ul>
+    
+    <li> <a href="{% url 'plateforme:profil' %}">Profils et Membres</a>
+      
+    <li> <a href="{% url 'plateforme:actualites' %}">Actualites</a>
+
+      <ul class="sf-menu">
+        <li> <a href="{% url 'plateforme:evenements' %}">Evènements</a>
+        <li> <a href="{% url 'plateforme:annonces' %}">Annonces</a>
+        <li> <a href="{% url 'plateforme:timeline' %}">Timeline</a>
+        </li>
+      </ul>
+
+    <li> <a href="evenements.html">Education</a>
+      
+      <ul class="sf-menu">
+        
+        
+        <li> <a href="single-post.html">Reseau</a>
+        <li> <a href="single-post-2.html">Developpement</a>
+        <li> <a href="single-post.html">Certifications</a>
+        <li> <a href="single-post-2.html">Base de Données</a>
+        <li> <a href="single-post.html">Systèmes</a>
+        <li> <a href="single-post-2.html">Insertion Professionnelle</a>
+        <li> <a href="single-post-2.html">Bureautique</a>
+        </li>
+      </ul>
+  
+    <li> <a href="timeline.html">Espace Membre</a>
+
+      <ul class="sf-menu">
+        <li> <a href="">Forum</a>
+        <li> <a href="">Mon Blog</a>
+        </li>
+      </ul>
+      
+    <li> <a href="shortcode.html">Contact</a>
+      
+    </li>
+  </ul>
+  
+</nav>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <!-- End Site Header -->

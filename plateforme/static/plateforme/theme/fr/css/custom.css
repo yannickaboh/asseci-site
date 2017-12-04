@@ -1,0 +1,79 @@
+/* ==================================================
+   Add your own style here. This file will overide properties described in any other css file.
+================================================== */
+
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0px 0px 5px 0px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.civilite input {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+.civilite label {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+.navigation > ul > li {
+    font-size: 14px;
+}
+
+.logo img {
+    float: left;
+    margin-right: 10px;
+	max-height:70px;
+}
+
+.site-header .logo {
+    display: block!important;
+	line-height:35px!important;
+	height:auto!important;
+	padding: 5px 0px 5px 0px!important;
+	font-size: 36px;
+	text-decoration:none;
+}
+
+p.corporate {
+    margin: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+p.corporate {
+    margin: 0;
+    font-size: 12px;
+    line-height: 12px;
+}
+.site-header .logo {
+    line-height: 21px!important;
+    font-size: 22px;
+}
+}
+
+@media only screen and (max-width: 991px) {
+.site-header .logo {
+    line-height: 25px!important;
+}
+}
+
+.sitemap li {list-style:none!important}
+
+.sitemap ul li ul li {
+    border-bottom-style: dashed;
+    padding: 3px;
+    margin-left: 5px;
+}
